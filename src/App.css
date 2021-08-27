@@ -1,0 +1,235 @@
+.App {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+body{
+  background-color: #f4f5f7;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.Nav{
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  background-color: #0747a6;
+  color: #deebff;
+  font-size: 150%;
+  margin-bottom: 1%;
+}
+
+.VerticalNav{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  height: 100%;
+  width: 20%;
+  background-color: #f4f5f7;
+  color:#42526e;
+}
+
+.VertItem{
+  border-radius: 5%;
+  color: #42526e;
+  font-weight: bold;
+  margin-top: 2%;
+  font-size: 90%;
+  padding: 0% 5%;
+}
+
+.VertItem:hover{
+  background-color: #E7E6E6;
+  cursor: pointer;
+}
+
+
+.Response{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  width: 70%;
+  height: 70%;
+  font-size: 100%;
+  margin: 2%;
+}
+
+.info{
+  background-color: #5E9ACA;
+  height: auto;
+  padding: 2%;
+  border-radius: 10px;
+  color: #f4f5f7;
+  font-weight: bold;
+}
+
+.error{
+  background-color: #E07A5E;
+  color: #f4f5f7;
+  padding: 1%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-radius: 5px;
+}
+
+.success{
+  background-color: #6DD263;
+  color: #f4f5f7;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-radius: 5px;
+}
+
+.Button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #42526e;
+  font-weight: bold;
+  cursor: pointer;
+  height: 1%;
+  padding: 3%;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 2%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.delete{
+  border-radius: 50%;
+}
+
+.delete:hover{
+  background-color:#CF0000;
+  border-radius: 50%;
+}
+
+.Button:active{
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+button{
+  margin: 2%;
+}
+
+.ButtonHolder{
+  display: flex;
+  margin: 2%;
+  width: 80%;
+  height: 70%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ActionPanel{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 2%;
+  height: 70%;
+}
+
+.textarea{
+  font-size:15px;
+  padding: 1%;
+  margin:5%;
+  margin-bottom: 5%;
+  margin-top: 2%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.textarea:hover{
+  background-color: #F0F0F0;
+  transition: 0.3s;
+}
+
+.input{
+  font-size:15px;
+  padding: 1%;
+  margin-bottom: 6%;
+  margin-top: 2%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.input:hover{
+  background-color: #F0F0F0;
+  transition: 0.3s;
+}
+
+.select{
+  font-size:15px;
+  padding: 1%;
+  margin-bottom: 6%;
+  margin-top: 2%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.select:hover{
+  background-color: #F0F0F0;
+  transition: 0.3s;
+}
+
+
+.Main{
+  display: flex;
+  flex-direction: row;
+  height: 95vh;
+}
+
+.Left{
+  display: flex;
+  justify-content: center;
+  border: 1px solid #ddd;
+  width: 50vw;
+}
+
+.Right{
+  display: flex;
+  justify-content: center;
+  border: 1px solid #ddd;
+  width: 50vw;
+  padding: 5%;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
