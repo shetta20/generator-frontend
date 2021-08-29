@@ -1,19 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Button from './Button';
 import { useEffect } from 'react';
 import { data } from 'browserslist';
 
 const ButtonHolder = (props) => {
 
+    const [buttonList,setButtonList] = useState(props.buildList)
+    const [Loading,setLoading] = useState(true)
+
     useEffect(() => {
-        fetch('http://localhost:3001/response').then(data => data.json()).then(data => {props.setbuildList(data)})
-        console.log("Running use effect:",data)
-      },[]);
+        fetch('http://localhost:3001/response').then(data => data.json()).then(data => {
+            props.setbuildList(data);
+            setLoading(false)
+        })
+      },[buttonList]);
 
     return(
     <div className='ButtonHolder'>
-        {console.log("Rendering Button Holder")}
-        {props.buildList.length !== 0?
+        {console.log("Rendering Button Holder",props.buildList)}
+        {Loading === true?<div><p className="loading">Your resposes are Loading....</p></div>:
+        props.buildList.length !== 0?
         props.buildList.map((item,key) => 
             {
                 return(<Button 

@@ -7,9 +7,12 @@ const VertItem = (props) =>{
             props.changeTray('buildScreen')
         else if(props.item === "Add button")  
             props.changeTray('addButton')
-        else
+        else if(props.item === 'Canned')
             props.changeTray('canned')
+        else if(props.item === 'noteHolder')
+            props.changeTray('noteHolder')
     }
+    
     return(
     <div className='VertItem' onClick={()=>setTray()}>
         <p>{props.name}</p>

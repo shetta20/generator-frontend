@@ -10,6 +10,8 @@ const VerticalNav = (props) => {
         <VertItem changeTray={props.changeTray} item='internalEscalation' name="Internal escalation template"/>
         <VertItem changeTray={props.changeTray} item='developerEscalation' name="Developer escalation template"/>
         <VertItem changeTray={props.changeTray} item='developerEscalation' name="Handover Template"/>
+        <VertItem changeTray={props.changeTray} item='developerEscalation' name="Repository"/>
+        <VertItem changeTray={props.changeTray} item='noteHolder' name="Notes"/>
     </div>
     );
 }

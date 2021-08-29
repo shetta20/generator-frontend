@@ -74,6 +74,17 @@ body{
   font-weight: bold;
 }
 
+.loading{
+  background-color: #5E9ACA;
+  height: auto;
+  padding: 15%;
+  border-radius: 5px;
+  color: #f4f5f7;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+
 .error{
   background-color: #E07A5E;
   color: #f4f5f7;
@@ -137,14 +148,55 @@ button{
   flex-wrap: wrap;
 }
 
+.NoteHolder{
+  display: flex;
+  margin: 2%;
+  width: 80%;
+  height: 85%;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+}
+
+.Note{
+  width:30%;
+  height: 30%;
+  border: 2px solid black;
+  margin: 2%
+}
+
 .ActionPanel{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 80%;
-  margin: 2%;
+  margin-top: 12%;
   height: 70%;
+}
+
+.Message{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.KeyValue{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 2%;
+  height: 50%;
+}
+
+.DropDown{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .textarea{
